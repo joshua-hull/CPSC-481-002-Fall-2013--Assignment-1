@@ -25,5 +25,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)goButtonPressed:(id)sender {
+    NSString *fromTextContents = _fromText.text;
+    NSString *toTextContents = _toField.text;
+    NSString *popUpContents  = [NSString stringWithFormat:@"%s %@ %s %@", "Getting directions from ", fromTextContents, " to ", toTextContents];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Getting Directions"
+                                                    message:popUpContents
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Dismiss"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 
 @end

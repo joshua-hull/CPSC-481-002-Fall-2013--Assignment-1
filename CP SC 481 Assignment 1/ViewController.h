@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *toField;
+@property (weak, nonatomic) IBOutlet UITextField *fromText;
+@property (weak, nonatomic) IBOutlet UIButton *goButton;
+
 @end
