@@ -27,7 +27,10 @@
                                     <constraint firstAttribute="width" constant="192" id="7AK-iv-4mD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="doneEditingFrom:" destination="2" eventType="editingDidEndOnExit" id="7nO-GV-Idz"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-2T-Tbg">
                                 <constraints>
@@ -47,7 +50,10 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGl-It-851">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="doneEditingTo:" destination="2" eventType="editingDidEndOnExit" id="ObD-IQ-caM"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhc-Uw-veL">
                                 <constraints>
@@ -105,6 +111,8 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="doneEditingFrom:" candidateClass="UITextField"/>
+                <relationship kind="action" name="doneEditingTo:" candidateClass="UITextField"/>
                 <relationship kind="action" name="goButtonPressed:"/>
                 <relationship kind="outlet" name="fromText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="goButton" candidateClass="UIButton"/>
