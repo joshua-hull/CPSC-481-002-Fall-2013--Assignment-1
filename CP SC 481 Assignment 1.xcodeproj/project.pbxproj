@@ -23,6 +23,8 @@
 		42AF955017D3FC7B001E3840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AF952B17D3FC7A001E3840 /* Foundation.framework */; };
 		42AF955817D3FC7B001E3840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42AF955617D3FC7B001E3840 /* InfoPlist.strings */; };
 		42AF955B17D3FC7B001E3840 /* CP_SC_481_Assignment_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AF955A17D3FC7B001E3840 /* CP_SC_481_Assignment_1Tests.m */; };
+		42AF956517D417C6001E3840 /* cap.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AF956417D417C6001E3840 /* cap.png */; };
+		42AF956717D41859001E3840 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AF956617D41859001E3840 /* Map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		42AF955717D3FC7B001E3840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42AF955917D3FC7B001E3840 /* CP_SC_481_Assignment_1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CP_SC_481_Assignment_1Tests.h; sourceTree = "<group>"; };
 		42AF955A17D3FC7B001E3840 /* CP_SC_481_Assignment_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CP_SC_481_Assignment_1Tests.m; sourceTree = "<group>"; };
+		42AF956417D417C6001E3840 /* cap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cap.png; sourceTree = "<group>"; };
+		42AF956617D41859001E3840 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		42AF953017D3FC7A001E3840 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42AF956617D41859001E3840 /* Map.png */,
+				42AF956417D417C6001E3840 /* cap.png */,
 				42AF953117D3FC7A001E3840 /* CP SC 481 Assignment 1-Info.plist */,
 				42AF953217D3FC7A001E3840 /* InfoPlist.strings */,
 				42AF953517D3FC7A001E3840 /* main.m */,
@@ -236,6 +242,8 @@
 				42AF953E17D3FC7A001E3840 /* Default@2x.png in Resources */,
 				42AF954017D3FC7A001E3840 /* Default-568h@2x.png in Resources */,
 				42AF954317D3FC7B001E3840 /* MainStoryboard.storyboard in Resources */,
+				42AF956517D417C6001E3840 /* cap.png in Resources */,
+				42AF956717D41859001E3840 /* Map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
