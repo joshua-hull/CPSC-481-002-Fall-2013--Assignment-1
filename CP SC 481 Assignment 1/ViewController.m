@@ -43,12 +43,24 @@
     NSString *toTextContents = toField.text;
     NSString *popUpContents  = [NSString stringWithFormat:@"%s %@ %s %@", "Getting directions from", fromTextContents, "to", toTextContents];
     
+    if(fromTextContents.length == 0){
+        popUpContents = @"Please enter a 'From' Address.";
+    }
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Getting Directions"
                                                     message:popUpContents
                                                    delegate:nil
                                           cancelButtonTitle:@"Dismiss"
                                           otherButtonTitles:nil];
     [alert show];
+    
+    if(fromTextContents.length != 0){
+        UILocalNotification *directionsNotificaiton = [[UILocalNotification alloc] init];
+        directionsNotificaiton.fireDate = [NSDate dateWithTimeIntervalSinceNow:30];
+        directionsNotificaiton.alertBody = [NSString stringWithFormat:@"Directions to %@",toTextContents];
+        directionsNotificaiton.timeZone = [NSTimeZone defaultTimeZone];
+        [[UIApplication sharedApplication] scheduleLocalNotification:directionsNotificaiton];
+    }
 }
 - (IBAction)showInfo:(UIButton *)sender {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Clemson University\nCPSC 481-002 Fall 2013\nAssignment 1"
